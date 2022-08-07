@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: king
+  name: kin
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: king
+      app: kin
   template:
     metadata:
       labels:
-        app: king
+        app: kin
     spec:
       containers:
-      - image: okteto.dev/king:latest
-        name: king
+      - image: okteto.dev/kin:latest
+        name: kin
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "85417281-71d3-44a2-bca0-466ca3afb726"
+          value: "4853783d-56a2-4f38-ab54-e9d6e4395848"
         - name: Vless_Path
-          value: "/vl5dg"
+          value: "/vlyyyyy"
         - name: Vmess_UUID
-          value: "430cbad5-aa8e-44e3-ab5e-97255192ccd1"
+          value: "22775dce-b934-4f99-85df-07d4cf77664c"
         - name: Vmess_Path
-          value: "/vmv8hb"
+          value: "/vm99999"
         - name: Share_Path
           value: "/v2link"
