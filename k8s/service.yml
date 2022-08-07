@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: king
+  name: kin
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "king"
+  - name: "kin"
     port: 8080
   selector:
-    app: king
+    app: kin
